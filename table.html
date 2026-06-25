@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wang's Web</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Wang's Web</h1>
+
+        <p>介紹一下酸菜魚的魚！</p>
+    </header>
+
+    <main>
+        <div class="content">
+            <form>
+                <p><strong>*為必填項目</strong></p>
+                <table>
+                    <caption>餐廳合作</caption>
+                    <tr>
+                        <th>店名*</th>
+                        <td><input type="text" name="rest" required></td>
+                    </tr>
+                    <tr>
+                        <th>地區</th>
+                        <td>
+                            <select name="loc" id="">
+                                <option value="北部">北部</option>
+                                <option value="中部" selected>中部</option>
+                                <option value="南部">南部</option>
+                                <option value="東部">東部</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>素食</th>
+                        <td>
+                            <input type="radio" name="vege" id="yesveg" value="yesveg" checked><label
+                                for="yesveg">有</label>
+                            <input type="radio" name="vege" id="noveg" value="noveg"><label for="noveg">無</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>菜系</th>
+                        <td>
+                            <input type="checkbox" name="foodtype" id="chinese" value="chinese"><label
+                                for="chinese">中式</label>
+                            <input type="checkbox" name="foodtype" id="japanese" value="japanese"><label
+                                for="japanese">日式</label>
+                            <input type="checkbox" name="foodtype" id="korean" value="korean"><label
+                                for="korean">韓式</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>美食照片</th>
+                        <td>
+                            <input type="file">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <caption>聯絡資料</caption>
+                    <tr>
+                        <th>名字*</th>
+                        <td>
+                            <input type="text" name="name" required placeholder="汪先生">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>E-MAIL*</th>
+                        <td>
+                            <input type="email" name="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>留言</th>
+                        <td>
+                            <textarea name="message" placeholder="請留言" rows="5" cols="30"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div class="btns">
+                    <input type="reset" value="清除">
+                    <input type="submit" value="送出">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p><small>Copyright © Wang's Web All Rights Reserved.</small></p>
+    </footer>
+
+
+
+
+</body>
+
+</html>

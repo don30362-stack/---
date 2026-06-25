@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+/*視窗背景色設定*/
+body {
+    /* background-color: #fbf9cc;
+    background-image: url(./images/bg.png);
+    background-repeat: repeat-x; */
+    background: #fbf9cc url(./images/bg.png) repeat-x;
+    /* background-position: left bottom; */
+    /* background-position: 300px 20px; */
+    /* background-position: 33% 10%; */
+
+}
+
+/*連結顏色設定*/
+a:link {
+    color: dimgray;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    color: cadetblue;
+}
+
+a:active {
+    color: teal;
+}
+
+/*頁首,導覽,頁尾的共通設定*/
+header,
+nav,
+footer {
+    text-align: center;
+}
+
+/*頁面標題設定*/
+@font-face {
+    font-family: PixelifySans;
+    src: url(./PixelifySans-VariableFont_wght.ttf);
+}
+
+h1 {
+    color: white;
+    /* background-color: green; */
+    width: 300px;
+    border: 5px solid #95dbbd;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 40px auto;
+    border-radius: 50%;
+    /* %看各自邊，px看短邊*/
+    font-size: 300%;
+    line-height: 1em;
+    font-family: PixelifySans, sans-serif;
+    text-shadow: 0 0 5px black;
+    box-shadow: 0 0 10px black;
+    background: linear-gradient(to bottom, #6eba99, #4b9e7a);
+}
+
+
+/*導覽樣式設定*/
+.menu {
+    margin-left: -2.5em;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 200px;
+    /* background-color: #6fbb9a;
+    border-radius: 10px;
+    padding: 10px; */
+    margin: 0 10px;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    background-color: #6fbb9a;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+}
+
+
+/*內容區塊邊框設定*/
+.content {
+    background-color: white;
+    border: 1px solid #f7c7a3;
+    width: 960px;
+    margin: 30px auto;
+    padding: 40px 80px;
+    box-sizing: border-box;
+}
+
+/*次標題設定*/
+h2{
+    color: #76bd9b;
+    border: 1px dotted #76bd9b;
+    border-left: 10px solid #d0e95b;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+/*小標題設定*/
+h3{
+    color: #ff705b;
+    background-color: #fbf9cc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px 5px #eeb3aa inset;
+}
+
+/*文繞圖設定*/
+.imgL{
+    float: left;
+    margin-right: 20px;
+}
+
+.imgR{
+    float: right;
+    margin-left: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.imgchef{
+    width: 450px;
+}
+
+/*「更多介紹」連結設定*/
+.more{
+    text-align: right;
+}
+
+.more::after{
+    content: url(./images/ico_arrow.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/*連結圖示設定*/
+a[href*="mailto"]::after{
+    content: url(./images/ico_mail.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+a[href^="https"]::after{
+    content: url(./images/ico_blank.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/*圓形圖片設定*/
+.imgRad{
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+
+/*區塊間分隔*/
+/* section + section{
+    margin-top: 80px;
+}
+section section{
+    margin-top: 0;
+} */
+
+/* div.content > section ~ section{
+    margin-top: 80px;
+} */
+
+div.content > section + section{
+    margin-top: 80px;
+}
+
+/*表格設定*/
+table{
+    width: 100%;
+    border: 2px solid #f7c7a3;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+table th, table td{
+    border: 1px solid #f7c7a3;
+    padding: 10px 20px;
+}
+
+table th{
+    background-color: #ffeeee;
+    text-align: left;
+    width: 10em;
+}
+
+table caption{
+    margin-bottom: 10px;
+}
+
+/*表單設定*/
+input[type="text"],
+input[type="email"],
+textarea{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+    background-color: yellow;
+    border: 2px solid red;
+    outline: none;
+}
+/*按鈕設定*/
+
+.btns{
+    text-align: center;
+}
+
+.btns input{
+    background-color: #fff;
+    border: 2px solid #f7c7a3;
+    width: 200px;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+    font-style: 1em;
+}
+
+.btns input:hover{
+    background-color: #f6d9c9;
+}
